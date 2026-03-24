@@ -50,12 +50,12 @@ export const Navbar = () => {
   }, []);
 
   useEffect(() => {
-    const storedTheme = localStorage.getItem("theme");
+    const storedTheme = localStorage.getItem("portfolio-theme");
     if (storedTheme === "light") {
       setIsDarkMode(false);
       document.documentElement.classList.remove("dark");
     } else {
-      localStorage.setItem("theme", "dark");
+      localStorage.setItem("portfolio-theme", "dark");
       setIsDarkMode(true);
       document.documentElement.classList.add("dark");
     }
@@ -67,11 +67,11 @@ export const Navbar = () => {
 
     if (isDarkMode) {
       document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
+      localStorage.setItem("portfolio-theme", "light");
       setIsDarkMode(false);
     } else {
       document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
+      localStorage.setItem("portfolio-theme", "dark");
       setIsDarkMode(true);
     }
   };
