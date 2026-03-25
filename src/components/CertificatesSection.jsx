@@ -62,7 +62,7 @@ export const CertificatesSection = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
-            Certificates & <span className="text-[#a78bfa]">Achievements</span>
+            Certificates & <span className="text-[#a78bfa]">Learnings</span>
           </h2>
           <p className="mt-4 text-slate-400 max-w-2xl mx-auto text-lg">
             Verified certificates that showcase skills and professional growth.
